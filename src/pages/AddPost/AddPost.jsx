@@ -26,6 +26,7 @@ const AddPost = (props) => {
   }
 
   const handleSubmit = async e => {
+    e.preventDefault()
     try {
       props.handleAddPost(formData, photoData.photo)
       navigate('/')
